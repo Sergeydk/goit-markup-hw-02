@@ -1,9 +1,23 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+
+  --button-back-color: #2196f3;
+  --button-white-color: #ffffff;
+  --button2-back-color: #f5f4fa;
+  --adress-text-color: rgba(255, 255, 255, 0.6);
+  --hover-adress-collor: #ffffff;
+  --section-back-color: #ffffff;
+  --hero-back-color: #2f303a;
+  --hero-title-color: #ffffff;
+  --nav-hover-color: #2196f3;
+  --footer-back-color: #2f303a;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
   background: #ffffff;
   color: var(--primary-text-color);
 }
@@ -14,14 +28,17 @@ body {
 /* заголовок цвет #212121 */
 /* бекграунд команда #F5F4FA */
 /* футер адрес rgba(255, 255, 255, 0.6) */
+a {
+  text-decoration: none;
+}
 
 /* шапка макета */
 .logo {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   text-decoration: none;
 }
 .web {
@@ -37,193 +54,165 @@ ul {
 
 .site-nav .link {
   color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-.site-nav .link .current {
-  color: #2196f3;
+.site-nav .link:focus,
+.site-nav .link.current,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--nav-hover-color);
 }
 
 .auth-nav .link {
   color: var(--primary-text-color);
-  font-family: Roboto;
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: #2196f3;
-}
+
 /* hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-back-color);
 }
 .hero-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.363;
 }
 /* кнопка */
 .button1 {
-  color: white;
-  background: #2196f3;
+  color: var(--button-white-color);
+  background: var(--button-back-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .button2 {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--button2-back-color);
 }
 .button2:hover,
 .button2:focus {
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--button-white-color);
+  background: var(--button-back-color);
 }
 /* цвета теkстов */
 .section {
-  background: #ffffff;
+  background: var(--section-back-color);
 }
 
 .section-title {
   color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.166;
 }
 
 .hero .hero-title {
-  color: white;
+  color: var(--hero-title-color);
 }
 .feature p {
   color: var(--feature-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 }
 .feature h3 {
   color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .section h3 {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
 }
 .section p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
 }
 /* *********************************our team */
 .team {
   background: #f5f4fa;
 }
 .team-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 .team-feature h3 {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
 
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 .team-feature p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /* футер */
 footer {
-  background-color: #2f303a;
+  background-color: var(--footer-back-color);
 }
 .stud1 {
   color: #ffffff;
 }
 .foot-adr {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration-line: none;
 }
 
 .adress {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-text-color);
 }
 .adress:hover,
 .adress:focus {
-  color: #ffffff;
+  color: var(--hover-adress-collor);
 }
 /* **************************************PORTFOLIO */
 .filters h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .filters p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
