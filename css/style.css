@@ -1,24 +1,17 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-
   --button-back-color: #2196f3;
   --button-white-color: #ffffff;
   --button2-back-color: #f5f4fa;
   --adress-text-color: rgba(255, 255, 255, 0.6);
-  --hover-adress-collor: #ffffff;
-  --section-back-color: #ffffff;
   --hero-back-color: #2f303a;
-  --hero-title-color: #ffffff;
-  --nav-hover-color: #2196f3;
-  --footer-back-color: #2f303a;
+  --stud-text-color: #000000;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-
-  background: #ffffff;
+  background: var(--button-white-color);
   color: var(--primary-text-color);
 }
 /* выделение ссылок #2196F3 */
@@ -34,18 +27,17 @@ a {
 
 /* шапка макета */
 .logo {
-  font-family: Raleway;
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   text-decoration: none;
 }
 .web {
-  color: #2196f3;
+  color: var(--button-back-color);
 }
 .stud {
-  color: #000000;
+  color: var(--stud-text-color);
 }
 ul {
   list-style: none;
@@ -64,7 +56,7 @@ ul {
 .site-nav .link.current,
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: var(--nav-hover-color);
+  color: var(--button-back-color);
 }
 
 .auth-nav .link {
@@ -102,7 +94,7 @@ ul {
 }
 /* цвета теkстов */
 .section {
-  background: var(--section-back-color);
+  background: var(--button-white-color);
 }
 
 .section-title {
@@ -114,7 +106,7 @@ ul {
 }
 
 .hero .hero-title {
-  color: var(--hero-title-color);
+  color: var(--button-white-color);
 }
 .feature p {
   color: var(--feature-text-color);
@@ -146,7 +138,7 @@ ul {
 }
 /* *********************************our team */
 .team {
-  background: #f5f4fa;
+  background: var(--button2-back-color);
 }
 .team-title {
   font-weight: 700;
@@ -168,7 +160,7 @@ ul {
 .team-feature p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
 
   letter-spacing: 0.03em;
 
@@ -176,22 +168,24 @@ ul {
 }
 /* футер */
 footer {
-  background-color: var(--footer-back-color);
+  background-color: var(--hero-back-color);
 }
 .stud1 {
-  color: #ffffff;
+  color: var(--button-white-color);
 }
 .foot-adr {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--button-white-color);
   text-decoration-line: none;
 }
 
 .adress {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -199,7 +193,7 @@ footer {
 }
 .adress:hover,
 .adress:focus {
-  color: var(--hover-adress-collor);
+  color: var(--button-white-color);
 }
 /* **************************************PORTFOLIO */
 .filters h2 {
